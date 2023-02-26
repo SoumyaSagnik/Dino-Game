@@ -87,6 +87,7 @@ function handleLose() {
   setDinoLose();
   setTimeout(() => {
     document.addEventListener("keydown", handleStart, { once: true });
+    startScreenElement.innerHTML = "Game Over <br> Press any key to start";
     startScreenElement.classList.remove("hide");
-  }, 100);
+  }, 400);
 }

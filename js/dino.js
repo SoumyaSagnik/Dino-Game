@@ -71,7 +71,7 @@ function onJump(e) {
 }
 
 // mobile friendly
-document.querySelector("body").addEventListener("mousedown", () => {
+document.querySelector("body").addEventListener("touchstart", () => {
   const event = new KeyboardEvent("keydown", {
     key: "Space",
     code: "Space",
